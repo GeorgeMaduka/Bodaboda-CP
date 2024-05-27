@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.BodabodaCooperate" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.BodabodaCooperate" parent="Base.Theme.BodabodaCooperate" />
+    <!--Theme for Night Mode-->
+    <style name="nightModeSwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/night_mode</item>
+        <item name="colorSwitchThumbNormal">#99000000</item>
+        <item name="android:colorForeground">#000000</item>
+    </style>
+
+    <!--Theme for notifications-->
+    <style name="notificationSwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/notifications</item>
+        <item name="colorSwitchThumbNormal">#99000000</item>
+        <item name="android:colorForeground">#000000</item>
+    </style>
+
+    <!--Theme for Private Account-->
+    <style name="privateAccountSwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/private_account</item>
+        <item name="colorSwitchThumbNormal">#99000000</item>
+        <item name="android:colorForeground">#000000</item>
+    </style>
+
+    <!--Theme for Security-->
+    <style name="securitySwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/security</item>
+        <item name="colorSwitchThumbNormal">#99000000</item>
+        <item name="android:colorForeground">#000000</item>
+    </style>
+
+    <!--Theme for logout-->
+    <style name="logoutSwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/logout</item>
+        <item name="colorSwitchThumbNormal">#99000000</item>
+        <item name="android:colorForeground">#000000</item>
+    </style>
+
+</resources>
