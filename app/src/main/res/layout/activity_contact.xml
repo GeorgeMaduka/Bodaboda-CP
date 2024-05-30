@@ -39,10 +39,9 @@
                 android:textStyle="bold"/>
 
             <EditText
+                android:id="@+id/contact_email"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:id="@+id/domain"
-                android:layout_below="@+id/img"
                 android:text="gmaduka255@gmail.com"
                 android:textColorHint="@color/white"
                 android:layout_margin="5dp"
@@ -53,7 +52,7 @@
                 android:drawablePadding="20dp"/>
 
             <EditText
-                android:id="@+id/contactUs"
+                android:id="@+id/contact_phonenumber"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_below="@id/domain"
@@ -66,10 +65,10 @@
                 android:textColor="@color/black"
                 android:textColorHint="@color/white" />
             <EditText
-                android:id="@+id/location"
+                android:id="@+id/contact_location"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/contactUs"
+                android:layout_below="@id/contact_phonenumber"
                 android:layout_margin="5dp"
                 android:background="@drawable/round_contactus"
                 android:drawableRight="@drawable/location_icon"
@@ -87,11 +86,11 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/google"
+                    android:id="@+id/facebook"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:layout_margin="10dp"
-                    android:src="@drawable/google_icon"/>
+                    android:src="@drawable/facebook_icon"/>
 
                 <ImageView
                     android:id="@+id/github"

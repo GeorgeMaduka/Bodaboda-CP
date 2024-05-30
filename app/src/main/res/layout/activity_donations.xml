@@ -47,7 +47,7 @@
                 android:layout_height="120dp"
                 android:id="@+id/imgPaypal"
                 android:text="Paypal"
-                android:textAlignment="center"
+                android:gravity="center"
                 android:layout_margin="10dp"
                 android:textColorHint="@color/white"
                 android:padding="10dp"
@@ -61,7 +61,7 @@
                 android:layout_height="120dp"
                 android:id="@+id/imgCreditcard"
                 android:text="Credit card"
-                android:textAlignment="center"
+                android:gravity="center"
                 android:textColorHint="@color/white"
                 android:layout_margin="10dp"
                 android:padding="10dp"
@@ -75,7 +75,7 @@
                 android:layout_height="120dp"
                 android:id="@+id/imgMobile"
                 android:text="Mobile"
-                android:textAlignment="center"
+                android:gravity="center"
                 android:textColorHint="@color/white"
                 android:layout_margin="10dp"
                 android:padding="10dp"
@@ -83,7 +83,6 @@
                 android:textColor="@color/black"
                 android:drawableTop="@drawable/mobile_icon"
                 android:layout_gravity="center_horizontal"/>
-
 
         </LinearLayout>
 
