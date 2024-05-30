@@ -12,7 +12,7 @@
     <LinearLayout
         android:id="@+id/view"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="70dp"
         android:orientation="vertical"
         android:background="@color/white"
         android:padding="5dp">
@@ -26,7 +26,7 @@
 
 
         <TextView
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Bodadoda CP"
@@ -42,10 +42,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/view"
-        android:layout_marginTop="-80dp"
-        android:rowCount="3"
+        android:rowCount="4"
         android:columnCount="2"
-        android:layout_margin="24dp">
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp">
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
@@ -75,6 +76,42 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Home"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardElevation="12dp"
+            app:cardCornerRadius="15dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_margin="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgHome1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/boda_logo"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="More..."
                     android:layout_gravity="center_horizontal"
                     android:textStyle="bold"
                     android:textSize="18sp"/>
@@ -227,11 +264,42 @@
 
         </androidx.cardview.widget.CardView>
 
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="30dp"-->
+<!--            app:cardElevation="12dp"-->
+<!--            app:cardCornerRadius="15dp"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:layout_rowWeight="1"-->
+<!--            android:layout_row="3"-->
+<!--            android:layout_columnSpan="2"-->
+<!--            android:layout_margin="12dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_below="@+id/grid">-->
+
+<!--                <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_marginTop=""-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_height="85dp"-->
+<!--                    android:layout_marginStart="0dp"-->
+<!--                    android:layout_marginEnd="0dp"-->
+<!--                    android:background="@color/white"-->
+<!--                    app:itemHorizontalTranslationEnabled="true"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                    app:layout_constraintRight_toRightOf="parent"-->
+<!--                    app:menu="@menu/menu"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </androidx.cardview.widget.CardView>-->
+
     </GridLayout>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
-        android:layout_height="85dp"
-        app:menu="@menu/menu"
-        android:background="@color/white"/>
 </RelativeLayout>
+
