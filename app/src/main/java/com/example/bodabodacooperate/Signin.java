@@ -15,6 +15,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class Signin extends AppCompatActivity {
+    String subUsername, subPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +37,22 @@ public class Signin extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent go = new Intent(Signin.this, Dashboard.class);
-                startActivity(go);
+                // get submitted values
+                subUsername = username.getText().toString();
+                subPassword = password.getText().toString();
+
+                // validate username
+                if (subUsername.isEmpty()) {
+                    username.setError("Username is required");
+
+                } else if(subPassword.isEmpty()) {
+                    username.setError("Password is required");
+
+                } else {
+                    Intent go = new Intent(Signin.this, Dashboard.class);
+                    startActivity(go);
+                }
+
             }
         });
 

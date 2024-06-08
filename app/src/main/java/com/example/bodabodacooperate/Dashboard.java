@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -68,6 +69,7 @@ public class Dashboard extends AppCompatActivity {
         ImageView calender = findViewById(R.id.imgCalender);
         ImageView donations = findViewById(R.id.imgDonation);
         ImageView events = findViewById(R.id.imgEvents);
+        ImageButton drawermenu = findViewById(R.id.img_menu_drawable_icon);
 
         home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -105,6 +107,14 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent go = new Intent(getApplicationContext(), Events.class);
+                startActivity(go);
+            }
+        });
+
+        drawermenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent go = new Intent(getApplicationContext(), Home.class);
                 startActivity(go);
             }
         });
